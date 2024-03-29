@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        <label>Enter Name</label>
+        <input type="text" id="name" placeholder="name"/>
+        <input type="button" value="validate" onclick="validate()"/>
+        <span style="color: red; margin-left: 81px; display: none;" id="ss">enter valid name</span>
+
+
+
+    </body>
+    <script>
+        function validate(){
+           var a= document.getElementById('name').value
+            if(a.length>3){
+           var a= document.getElementById('ss').style="display:none;";
+            }
+            else{
+           var a= document.getElementById('ss').style="display:block; color:red; margin-left: 81px";
+
+            }
+        }
+    </script>
+</html>
